@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-20.04
     container: epitechcontent/epitest-docker:devel
     steps:
-    # Checkout code
-    - name: Checkout code
-      uses: actions/checkout@v2
+      # Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    # Run
-    - name: Build
-      run: make
+      # Run
+      - name: Build
+        run: make
 
-    - name: Check if exists
-      run: ls my_hello
+      - name: Check if exists
+        run: ls my_hello
