@@ -7,5 +7,6 @@ on:
 
 jobs:
   compilation:
-    runs-on: ubuntu-latest
+    name: compilation
+    runs-on: ubuntu-20.04
     uses: docker://epitechcontent/epitest-docker:devel
