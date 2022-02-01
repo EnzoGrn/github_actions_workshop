@@ -5,6 +5,6 @@ on:
       - 'master'
 
 jobs:
-  runs-on: ubuntu 20.04
   compilation:
-  uses: docker://epitechcontent/epitest-docker:devel
+    runs-on: ubuntu 20.04
+    uses: docker://epitechcontent/epitest-docker:devel
