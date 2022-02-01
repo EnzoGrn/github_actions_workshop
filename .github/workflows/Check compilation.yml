@@ -1,12 +1,12 @@
 
-name: check_compilation
+name: Check compilation
 on:
   push:
     branches:
       - 'master'
 
 jobs:
-  compilation:
-    name: compilation
-    runs-on: ubuntu-20.04
-    uses: docker://epitechcontent/epitest-docker:devel
+  container: epitechcontent/epitest-docker:devel
+  steps:
+    compilation:
+      runs-on: ubuntu-20.04
